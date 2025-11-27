@@ -16,7 +16,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <155>;
             quick_tap_ms = <0>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
 
@@ -49,7 +49,7 @@
 &kp TAB        &kp Q       &kp W           &kp F        &kp P             &kp B   &none                                                                   &kp C_VOLUME_UP    &kp J   &kp L              &kp U                &kp Y            &kp SQT     &kp BSPC
 &mt LCTRL ESC  &hm LGUI A  &hm LEFT_ALT R  &hm LCTRL S  &hm LEFT_SHIFT T  &kp G   &none         &kp TAB      &trans       &kp DEL        &kp RCTRL        &kp C_VOLUME_DOWN  &kp M   &hm RIGHT_SHIFT N  &hm RIGHT_CONTROL E  &hm RIGHT_ALT I  &hm RGUI O  &kp APOSTROPHE
 &kp LSHFT      &kp Z       &kp X           &kp C        &kp D             &kp V                              &mo 1        &kp BACKSPACE                                      &kp K   &kp H              &kp COMMA            &kp DOT          &kp FSLH    &kp RSHFT
-&mo 5          &trans      &trans          &kp SPACE    &kp ESCAPE                &lt 4 ESCAPE  &lt 1 SPACE  &kp TAB      &kp ENTER      &lt 1 BACKSPACE  &lt 2 DELETE               &trans             &trans               &trans           &trans      &mo 2
+&mo 5          &trans      &trans          &kp SPACE    &kp ESCAPE                &lt 4 ESCAPE  &lt 3 SPACE  &kp TAB      &kp ENTER      &lt 1 BACKSPACE  &lt 2 DELETE               &trans             &trans               &trans           &trans      &mo 2
             >;
         };
 
