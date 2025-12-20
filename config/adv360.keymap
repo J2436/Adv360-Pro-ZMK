@@ -37,6 +37,16 @@
             bindings = <&kp COLON>;
             key-positions = <43 44>;
         };
+
+        copy {
+            bindings = <&kp K_COPY>;
+            key-positions = <62 63>;
+        };
+
+        paste {
+            bindings = <&kp K_PASTE>;
+            key-positions = <63 64>;
+        };
     };
 
     keymap {
