@@ -16,7 +16,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <155>;
             quick_tap_ms = <0>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
 
@@ -59,6 +59,11 @@
             bindings = <&caps_word>;
             key-positions = <32 41>;
         };
+
+        underscore {
+            bindings = <&kp UNDER>;
+            key-positions = <55 56>;
+        };
     };
 
     keymap {
@@ -71,7 +76,7 @@
 &kp TAB        &kp Q        &kp W           &kp F       &kp P             &kp B   &none                                                                     &kp C_VOLUME_UP    &kp J   &kp L              &kp U            &kp Y            &kp SEMI            &kp BSPC
 &mt LCTRL ESC  &hm LCTRL A  &hm LEFT_ALT R  &hm LGUI S  &hm LEFT_SHIFT T  &kp G   &none         &kp TAB      &trans         &kp DEL        &kp RCTRL        &kp C_VOLUME_DOWN  &kp M   &hm RIGHT_SHIFT N  &hm RIGHT_GUI E  &hm RIGHT_ALT I  &hm LEFT_CONTROL O  &kp APOSTROPHE
 &kp LSHFT      &kp Z        &kp X           &kp C       &kp D             &kp V                              &mo 1          &kp BACKSPACE                                      &kp K   &kp H              &kp COMMA        &kp DOT          &lt 3 SLASH         &kp RSHFT
-&mo 6          &trans       &trans          &kp SPACE   &kp ESCAPE                &lt 4 ESCAPE  &lt 1 SPACE  &lt 3 TAB      &kp ENTER      &lt 2 BACKSPACE  &lt 2 DELETE               &trans             &trans           &trans           &trans              &mo 2
+&mo 6          &trans       &trans          &kp SPACE   &kp ESCAPE                &lt 4 ESCAPE  &lt 1 SPACE  &lt 3 TAB      &kp ENTER      &lt 2 BACKSPACE  &lt 2 DELETE               &kp BACKSPACE      &trans           &trans           &trans              &mo 2
             >;
         };
 
@@ -89,11 +94,11 @@
         symbol {
             display-name = "Symbol";
             bindings = <
-&kp EQUAL  &trans     &trans           &trans       &trans       &trans     &none                                       &none   &trans     &trans          &trans                &trans    &trans            &trans
-&trans     &trans     &kp AMPS         &kp STAR     &kp PERCENT  &trans     &none                                       &none   &kp PIPE   &kp EXCL        &kp LEFT_PARENTHESIS  &kp RPAR  &kp LESS_THAN     &trans
-&trans     &kp SEMI   &kp DOLLAR       &kp PERCENT  &kp CARET    &kp COLON  &trans  &trans  &trans      &trans  &trans  &trans  &kp MINUS  &kp EQUAL       &kp LBKT              &kp RBKT  &kp GREATER_THAN  &trans
-&trans     &kp GRAVE  &kp EXCLAMATION  &kp AT       &kp POUND    &kp TILDE                  &trans      &trans                  &kp PLUS   &kp UNDERSCORE  &kp LBRC              &kp RBRC  &kp BACKSLASH     &trans
-&trans     &trans     &trans           &trans       &trans                  &trans  &trans  &trans      &trans  &trans  &trans             &kp UNDER
+&kp EQUAL  &trans       &trans           &trans     &trans       &trans     &none                                       &none   &trans     &trans          &trans                &trans    &trans            &trans
+&trans     &trans       &kp HASH         &kp STAR   &kp PERCENT  &kp EXCL   &none                                       &none   &kp PIPE   &kp PLUS        &kp LEFT_PARENTHESIS  &kp RPAR  &kp LESS_THAN     &trans
+&trans     &kp AMPS     &kp DOLLAR       &kp STAR   &kp TILDE    &kp GRAVE  &trans  &trans  &trans      &trans  &trans  &trans  &kp MINUS  &kp EQUAL       &kp LBKT              &kp RBKT  &kp GREATER_THAN  &trans
+&trans     &kp PERCENT  &kp EXCLAMATION  &kp CARET  &kp DLLR     &kp TILDE                  &trans      &trans                  &kp PLUS   &kp UNDERSCORE  &kp LBRC              &kp RBRC  &kp BACKSLASH     &trans
+&trans     &trans       &trans           &trans     &trans                  &trans  &trans  &trans      &trans  &trans  &trans             &kp UNDER
             >;
         };
 
